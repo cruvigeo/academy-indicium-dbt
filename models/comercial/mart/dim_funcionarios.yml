@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: dim_funcionarios
+    description: Tabela de intermediário para designar o gerente do funcionário.
+    columns:
+      - name: PK_FUNCIONARIO
+        description: Chave primária que identifica unicamente o funcionário.
+              
+      - name: FK_GERENTE
+        description: Chave estrangeira que referencia o gerente do funcionário.
+        
+      - name: NOME_FUNCIONARIO
+        description: O nome do funcionário.
+      
+      - name: NOME_GERENTE
+        description: O nome do gerente do funcionário.
+        
+      - name: CARGO_FUNCIONARIO
+        description: O cargo ou posição do funcionário na empresa.
+        
+      - name: DT_NASCIMENTO_FUNCIONARIO
+        description: A data de nascimento do funcionário.
+        
+      - name: DT_CONTRATACAO
+        description: A data de contratação do funcionário.
+        
+      - name: CIDADE_FUNCIONARIO
+        description: A cidade onde o funcionário está localizado.
+        
+      - name: REGIAO_FUNCIONARIO
+        description: A região onde o funcionário está localizado.
+        
+      - name: PAIS_FUNCIONARIO
+        description: O país onde o funcionário está localizado."
